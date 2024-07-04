@@ -1,5 +1,5 @@
 # ROS2-jazzy
-Mastering ROS2: A Beginner-Friendly Journey from Basics to Expertise By Yassine 
+Mastering ROS2: A Beginner-Friendly Journey from Basics to Expertise By Yassine, 
 We'll teach you everything you need to know about ROS2, even if you've never programmed before.
 ## prerequirement : 
 Computer programming: We'll use Python, but a little bit of experience with any programming language will help.
