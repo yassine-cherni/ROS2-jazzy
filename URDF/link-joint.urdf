@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<robot name="my_robot">
+
+   <material name="grey">
+      <color rgba="0.7 0.7 0.7 1"/>
+   </material>
+
+   <material name="green">
+      <color rgba="0 0.6 0 1"/>
+   </material>
+
+   <material name="white">
+      <color rgba="1 1 1 1"/>
+   </material>
+
+   <link name="base_link">
+     <visual>
+      <geometry>
+        <box size="0.6 0.4 0.2"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0"/>
+      <material name="green"/>
+     </visual>
+  </link>
+
+  <link name="lidar_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.1" length="0.05"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="white"/>
+    </visual>
+  </link>
+
+  <joint name="base_lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+    <origin xyz="0 0 0.2"/>
+  </joint>
+
+</robot>
